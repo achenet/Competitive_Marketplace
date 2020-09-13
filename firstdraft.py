@@ -1,5 +1,13 @@
 #lets code something beautiful today. 
 
+class Competitor:
+    def __init__(self,project,name):
+        self.size = input("How many members are there?")
+        self.members = []
+        for i in range(size):
+            members.append(input("please enter user name"))
+
+
 class Project:
     def __init__(self,name,founder,description,deadline):
         self.name = name
@@ -7,8 +15,15 @@ class Project:
         self.description = description
         self.deadline = deadline
         self.backers = []
-        self.
+        self.competitors = []
 
+    def addBacker(user):
+        user.backedProjects.append(self)
+        self.backers.append(user)
+
+    def addCompetitor(self):
+        name = input("Please enter new competitor team name")
+        competitors.append(Competitor(self,name))
 
 class User:
 
@@ -18,7 +33,7 @@ class User:
         self.backedProjects = []
 
     def backNewProject(self,project):
-        project.addNewBacker(self)
+        project.addBacker(self)
 
     def foundNewProject(self):
         name = input("Please enter new project name")
