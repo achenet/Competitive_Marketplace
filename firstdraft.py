@@ -40,6 +40,6 @@ class User:
         description = input("Please enter project descripition:   ")
         deadline = int(input("Please enter project deadline, in seconds:   "))
         newProject = Project(name,self,description,deadline)
-
+        self.foundedProjects.append(newProject)
 
 #test script in another file
